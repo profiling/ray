@@ -22,30 +22,36 @@ Ray is a unified framework for scaling AI and Python applications. Ray consists 
 ..
   https://docs.google.com/drawings/d/1Pl8aCYOsZCo61cmp57c7Sja6HhIygGCvSZLi_AuBuqo/edit
 
-Learn more about `Ray AI Libraries`_:
+**Quick Start**
 
-- `Data`_: Scalable Datasets for ML
-- `Train`_: Distributed Training
-- `Tune`_: Scalable Hyperparameter Tuning
-- `RLlib`_: Scalable Reinforcement Learning
-- `Serve`_: Scalable and Programmable Serving
+Install Ray with: ``pip install ray``
 
-Or more about `Ray Core`_ and its key abstractions:
+For nightly wheels and more installation options, see the `Installation page <https://docs.ray.io/en/latest/ray-overview/installation.html>`__.
 
-- `Tasks`_: Stateless functions executed in the cluster.
-- `Actors`_: Stateful worker processes created in the cluster.
-- `Objects`_: Immutable values accessible across the cluster.
+**Ray AI Libraries**
 
-Learn more about Monitoring and Debugging:
+Ray provides specialized libraries for common ML workloads:
 
-- Monitor Ray apps and clusters with the `Ray Dashboard <https://docs.ray.io/en/latest/ray-core/ray-dashboard.html>`__.
-- Debug Ray apps with the `Ray Distributed Debugger <https://docs.ray.io/en/latest/ray-observability/ray-distributed-debugger.html>`__.
+- `Data`_: Scalable datasets for ML
+- `Train`_: Distributed training
+- `Tune`_: Scalable hyperparameter tuning  
+- `RLlib`_: Scalable reinforcement learning
+- `Serve`_: Scalable and programmable serving
 
-Ray runs on any machine, cluster, cloud provider, and Kubernetes, and features a growing
-`ecosystem of community integrations`_.
+**Ray Core**
 
-Install Ray with: ``pip install ray``. For nightly wheels, see the
-`Installation page <https://docs.ray.io/en/latest/ray-overview/installation.html>`__.
+Ray Core provides fundamental abstractions for distributed computing:
+
+- `Tasks`_: Stateless functions executed in the cluster
+- `Actors`_: Stateful worker processes created in the cluster
+- `Objects`_: Immutable values accessible across the cluster
+
+**Monitoring and Debugging**
+
+- Monitor Ray applications and clusters with the `Ray Dashboard <https://docs.ray.io/en/latest/ray-core/ray-dashboard.html>`__
+- Debug Ray applications with the `Ray Distributed Debugger <https://docs.ray.io/en/latest/ray-observability/ray-distributed-debugger.html>`__
+
+Ray runs on any machine, cluster, cloud provider, and Kubernetes, and features a growing `ecosystem of community integrations`_.
 
 .. _`Serve`: https://docs.ray.io/en/latest/serve/index.html
 .. _`Data`: https://docs.ray.io/en/latest/data/dataset.html
@@ -59,23 +65,28 @@ Install Ray with: ``pip install ray``. For nightly wheels, see the
 Why Ray?
 --------
 
-Today's ML workloads are increasingly compute-intensive. As convenient as they are, single-node development environments such as your laptop cannot scale to meet these demands.
+Today's ML workloads are increasingly compute-intensive. While single-node development environments like your laptop are convenient, they cannot scale to meet these growing demands.
 
-Ray is a unified way to scale Python and AI applications from a laptop to a cluster.
+Ray is a unified framework that enables you to seamlessly scale Python and AI applications from a laptop to a cluster. Ray is designed to be general-purpose and can performantly run any kind of workload. 
 
-With Ray, you can seamlessly scale the same code from a laptop to a cluster. Ray is designed to be general-purpose, meaning that it can performantly run any kind of workload. If your application is written in Python, you can scale it with Ray, no other infrastructure required.
+If your application is written in Python, you can scale it with Ray—no additional infrastructure required.
 
 More Information
 ----------------
 
+**Documentation and Resources:**
+
 - `Documentation`_
 - `Ray Architecture whitepaper`_
+
+**Research Papers:**
+
 - `Exoshuffle: large-scale data shuffle in Ray`_
 - `Ownership: a distributed futures system for fine-grained tasks`_
 - `RLlib paper`_
 - `Tune paper`_
 
-*Older documents:*
+**Older Documents:**
 
 - `Ray paper`_
 - `Ray HotOS paper`_
@@ -108,27 +119,27 @@ Getting Involved
      - Estimated Response Time
      - Support Level
    * - `Discourse Forum`_
-     - For discussions about development and questions about usage.
+     - Discussions about development and usage questions
      - < 1 day
      - Community
    * - `GitHub Issues`_
-     - For reporting bugs and filing feature requests.
+     - Bug reports and feature requests
      - < 2 days
      - Ray OSS Team
    * - `Slack`_
-     - For collaborating with other Ray users.
+     - Collaborating with other Ray users
      - < 2 days
      - Community
    * - `StackOverflow`_
-     - For asking questions about how to use Ray.
+     - Questions about how to use Ray
      - 3-5 days
      - Community
    * - `Meetup Group`_
-     - For learning about Ray projects and best practices.
+     - Learning about Ray projects and best practices
      - Monthly
      - Ray DevRel
    * - `Twitter`_
-     - For staying up-to-date on new features.
+     - Updates on new features and announcements
      - Daily
      - Ray DevRel
 
